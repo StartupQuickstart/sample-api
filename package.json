@@ -4,7 +4,9 @@
   "description": "Sample REST Api",
   "main": "index.js",
   "scripts": {
-    "start": "TZ=UTC babel-node ./src/server.js"
+    "start": "TZ=UTC node ./dist/server.js",
+    "dev": "TZ=UTC nodemon --exec babel-node ./src/server.js",
+    "build": "rimraf ./dist && NODE_ENV=production babel ./src  --out-dir dist"
   },
   "author": "Thomas Boles <thomas@startupquickstart.com> (https://github.com/startupquickstart)",
   "license": "MIT",
