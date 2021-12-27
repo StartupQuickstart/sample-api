@@ -1,12 +1,12 @@
 {
-  "name": "sample-app",
+  "name": "sample-api",
   "version": "0.0.1",
-  "description": "Sample App",
+  "description": "Sample REST Api",
   "main": "index.js",
   "scripts": {
-    "start": "TZ=UTC babel-node ./src/app.js"
+    "start": "TZ=UTC babel-node ./src/server.js"
   },
-  "author": "Thomas Boles <tcboles@me.com> (https://github.com/tcboles)",
+  "author": "Thomas Boles <thomas@startupquickstart.com> (https://github.com/startupquickstart)",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.15.7",
@@ -22,6 +22,13 @@
   "dependencies": {
     "@babel/eslint-parser": "^7.16.0",
     "@babel/runtime": "^7.15.4",
-    "babel-plugin-root-import": "^6.6.0"
+    "babel-plugin-root-import": "^6.6.0",
+    "body-parser": "^1.19.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0",
+    "passport": "^0.5.2"
   }
 }
