@@ -14,7 +14,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(cors());
-app.use(bodyParser.json({ limit: '1mb' }));
+app.use(bodyParser.json({ limit: 'mb' }));
 app.use(bodyParser.text());
 app.use(morgan('tiny'));
 
@@ -31,6 +31,8 @@ app.get('/', (req, res) => {
   res.status(200).json({
     apiName: pkg.name,
     version: pkg.version,
+    currentTime: new Date(),
+    timezone: process.env.TZ,
   });
 });
 
