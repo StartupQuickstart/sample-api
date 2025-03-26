@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
     apiName: pkg.name,
     version: pkg.version,
     currentTime: new Date(),
-    timezone: process.env.TZ,
+    timezone: process.env.TZ
   });
 });
 

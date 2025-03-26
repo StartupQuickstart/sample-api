@@ -11,14 +11,18 @@
   "author": "Thomas Boles <thomas@startupquickstart.com> (https://github.com/startupquickstart)",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.15.7",
+  "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
     "@babel/node": "^7.15.8",
     "@babel/plugin-transform-runtime": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
-    "eslint": "^7.32.0",
-    "eslint-config-babel": "^9.0.0",
-    "eslint-config-google": "^0.14.0",
+    "babel-plugin-root-import": "^6.6.0",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-unused-imports": "^4.1.3",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.3.3",
     "npm-run-all": "^4.1.5"
   },
   "dependencies": {
@@ -28,9 +32,9 @@
     "body-parser": "^1.19.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
+    "dotenv": "^16.4.7",
     "express": "^4.17.2",
     "morgan": "^1.10.0",
-    "passport": "^0.5.2"
+    "passport": "^0.7.0"
   }
 }
